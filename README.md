@@ -15,3 +15,6 @@
   Then download & install the apk
   
   Use an anchor link embebbed into an html with href=myapp://product/jwt
+
+# Apk
+  An already built apk is inner build folder
