@@ -1,9 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native';
 import AppRoutes from './app.routes';
+import * as Linking from 'expo-linking';
 
-
+const prefix = Linking.createURL('/'); 
 const linking = {
-  prefixes: ["exp://10.196.230.216:8081/--/myapp"],
+  prefixes: [prefix],
   config: {
     screens:{
       home: {
