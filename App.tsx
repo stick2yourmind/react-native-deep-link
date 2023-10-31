@@ -1,6 +1,6 @@
 import { createURL, useURL } from 'expo-linking';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Routes from './src/routes';
 
 export default function App() {
   const redirectUrl = useURL()
@@ -9,11 +9,7 @@ export default function App() {
   })
   console.log('🚀 ~ file: App.tsx:9 ~ App ~ url:', url)
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>redirectUrl: {redirectUrl}</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Routes/>
   );
 }
 
